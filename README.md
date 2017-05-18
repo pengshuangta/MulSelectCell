@@ -1,9 +1,6 @@
 # MulSelectCell
 tableview实现类似购物车商品多选按钮选中状态不会被刷新掉
 三种方法简单的实现商品多选，当用户选中商品的时候，滚动tableview按钮的选中状态不会被刷新掉，主要的原理是不让cell使用复用。关键代码：
-
-cellForRowAtIndexPath方法中：
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //不使用重用，根据indexPath来加载cell实例
     NSString *CellIdentifier = [NSString stringWithFormat:@"cell%ld%ld",indexPath.section,indexPath.row];
