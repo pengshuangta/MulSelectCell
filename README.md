@@ -1,0 +1,2 @@
+# MulSelectCell
+tableview实现类似购物车商品多选按钮选中状态不会被刷新掉
